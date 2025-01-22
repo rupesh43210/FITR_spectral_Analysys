@@ -189,19 +189,71 @@ For additional help or to report issues:
 ## Project Structure
 
 ```
-.
-├── data/               # Input data directory
-├── output/            # Analysis results and visualizations
-├── src/               # Source code
-│   ├── data_processor.py    # Data preprocessing
-│   ├── model_trainer.py     # ML model training
-│   ├── process_ftir.py      # Main processing script
-│   └── visualizer.py        # Visualization functions
-├── tests/             # Unit tests
-├── requirements.txt   # Python dependencies
-├── setup.sh          # Setup script
-└── README.md         # This file
+FTIR_spectral_Analysis/
+├── data/                   # Data directory for FTIR spectral files
+│   ├── osmf.xlsx          # OSF group spectral data
+│   ├── habit.xlsx         # Habit group spectral data
+│   └── normal.xlsx        # Normal group spectral data
+│
+├── src/                   # Source code directory
+│   ├── process_ftir.py    # Main script to run the analysis
+│   ├── data_processor.py  # Data preprocessing and feature extraction
+│   ├── model_trainer.py   # Machine learning model training and evaluation
+│   └── visualizer.py      # Visualization and plotting functions
+│
+├── output/               # Output directory for results
+│   └── analysis_*/       # Timestamped analysis results
+│       ├── models/       # Saved trained models
+│       ├── plots/        # Generated visualizations
+│       └── reports/      # Analysis reports and logs
+│
+├── images/              # Documentation images and plots
+│   ├── model_comparison.png
+│   ├── roc_curves.png
+│   ├── average_spectra.png
+│   ├── peak_analysis.png
+│   └── spectral_variance.png
+│
+├── tests/              # Test directory
+│   └── ...            # Test files for each module
+│
+├── docs/              # Documentation directory
+│   └── ...           # Additional documentation files
+│
+├── setup.sh          # Setup script for environment configuration
+├── requirements.txt  # Python package dependencies
+├── .gitignore       # Git ignore file
+├── LICENSE          # License file
+└── README.md        # Project documentation
 ```
+
+### Key Components
+
+1. **Source Code (`src/`)**:
+   - `process_ftir.py`: Main entry point for running the analysis
+   - `data_processor.py`: Handles data loading, preprocessing, and feature extraction
+   - `model_trainer.py`: Implements machine learning model training and evaluation
+   - `visualizer.py`: Creates visualizations and plots for analysis results
+
+2. **Data Directory (`data/`)**:
+   - Contains FTIR spectral data files in Excel format
+   - Each file represents a different group (OSF, Habit, Normal)
+   - Follows standardized format (wave numbers vs. spectra)
+
+3. **Output Directory (`output/`)**:
+   - Contains timestamped directories for each analysis run
+   - Stores trained models, visualizations, and analysis reports
+   - Preserves complete history of analysis results
+
+4. **Documentation Images (`images/`)**:
+   - Contains visualization examples used in documentation
+   - Demonstrates key features and capabilities
+   - Provides visual reference for analysis outputs
+
+5. **Configuration Files**:
+   - `setup.sh`: Automates environment setup and dependency installation
+   - `requirements.txt`: Lists all Python package dependencies
+   - `.gitignore`: Specifies files to ignore in version control
 
 ## Contributing
 
