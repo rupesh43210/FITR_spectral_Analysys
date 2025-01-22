@@ -4,25 +4,34 @@ An advanced tool for analyzing FTIR (Fourier Transform Infrared) spectral data u
 
 ## Sample Visualizations
 
-### Model Performance Comparison
-![Model Comparison](images/model_comparison.png)
-*Comparison of different machine learning models' performance metrics*
+<table>
+<tr>
+    <td width="50%">
+        <img src="images/model_comparison.png" alt="Model Comparison" width="100%"/>
+        <p align="center"><em>Model Performance Comparison</em></p>
+    </td>
+    <td width="50%">
+        <img src="images/roc_curves.png" alt="ROC Curves" width="100%"/>
+        <p align="center"><em>ROC Curves with Confidence Intervals</em></p>
+    </td>
+</tr>
+<tr>
+    <td width="50%">
+        <img src="images/average_spectra.png" alt="Average Spectra" width="100%"/>
+        <p align="center"><em>Average FTIR Spectra by Class</em></p>
+    </td>
+    <td width="50%">
+        <img src="images/peak_analysis.png" alt="Peak Analysis" width="100%"/>
+        <p align="center"><em>Peak Analysis and Feature Detection</em></p>
+    </td>
+</tr>
+</table>
 
-### ROC Curves
-![ROC Curves](images/roc_curves.png)
-*ROC curves with confidence intervals for all models*
-
-### Average Spectra Analysis
-![Average Spectra](images/average_spectra.png)
-*Average FTIR spectra for each class with confidence intervals*
-
-### Peak Analysis
-![Peak Analysis](images/peak_analysis.png)
-*Peak analysis visualization showing key spectral features*
-
-### Spectral Variance
-![Spectral Variance](images/spectral_variance.png)
-*Visualization of spectral variance across different classes*
+<p align="center">
+    <img src="images/spectral_variance.png" alt="Spectral Variance" width="70%"/>
+    <br>
+    <em>Spectral Variance Across Different Classes</em>
+</p>
 
 ## Table of Contents
 1. [Features](#features)
