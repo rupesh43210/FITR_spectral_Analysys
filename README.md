@@ -2,6 +2,28 @@
 
 An advanced tool for analyzing FTIR (Fourier Transform Infrared) spectral data using machine learning techniques. This tool provides comprehensive data preprocessing, feature extraction, model training, and visualization capabilities for spectral analysis.
 
+## Sample Visualizations
+
+### Model Performance Comparison
+![Model Comparison](images/model_comparison.png)
+*Comparison of different machine learning models' performance metrics*
+
+### ROC Curves
+![ROC Curves](images/roc_curves.png)
+*ROC curves with confidence intervals for all models*
+
+### Average Spectra Analysis
+![Average Spectra](images/average_spectra.png)
+*Average FTIR spectra for each class with confidence intervals*
+
+### Peak Analysis
+![Peak Analysis](images/peak_analysis.png)
+*Peak analysis visualization showing key spectral features*
+
+### Spectral Variance
+![Spectral Variance](images/spectral_variance.png)
+*Visualization of spectral variance across different classes*
+
 ## Table of Contents
 1. [Features](#features)
 2. [Data Format](#data-format)
@@ -83,8 +105,8 @@ Wave Number | Sample 1 | Sample 2 | ... | Sample N
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/rupesh43210/FITR_spectral_Analysys.git
+   cd FITR_spectral_Analysys
    ```
 
 2. Run the setup script:
